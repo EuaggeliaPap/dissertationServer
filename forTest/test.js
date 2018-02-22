@@ -8,7 +8,7 @@ var base_url = "http://192.168.1.3:8081/allforguest"
 describe("Hello World Server", function() {
     describe("POST /", function() {
         it('Main page status', function() {
-            request(base_url , function(error, response, body) {
+            request.post(base_url , function(error, response, body) {
                 expect(response.statusCode).to.equal(200);
             });
         });
