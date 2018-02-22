@@ -17,15 +17,6 @@ var connection = mysql.createConnection({
     database : 'appCook',
     multipleStatements: true
 });
-//
-// //ginetai i sundesi me ti basi
-// connection.connect(function(err){
-//     if(!err) {
-//         console.log("Database is connected ... nn");
-//     } else {
-//         console.log("Error connecting database ... nn");
-//     }
-// });
 
 app.post("/signup", function (req, res) {
 
@@ -225,17 +216,9 @@ app.post("/login", function (req, res) {
                     res.setHeader('Content-Type', 'application/json');
                     res.send(JSON.stringify(user));
                     console.log('Data retrived');
-//----------------------------------------------------------------------------------------------------------------------
                 } else {
-                    // Android will handle the situation after the timeout
                 }
             });
-            //connection.end();
-        // } else {
-        //     // Android will handle the situation after the timeout
-        //     connection.end();
-        // }
-    //});
 });
 
 
