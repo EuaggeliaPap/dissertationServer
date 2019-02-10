@@ -13,10 +13,10 @@ console.log("Post started ... nn");
 var connection = mysql.createConnection({
     host: 'localhost',
     port: '3306',
-    user: 'eua',
-    password: 'euaMarios',
-    // user: 'root',
-    // password: 'root',
+    // user: 'eua',
+    // password: 'euaMarios',
+    user: 'root',
+    password: 'root',
     database: 'appcooknew',
     multipleStatements: true
 });
@@ -574,7 +574,7 @@ app.get(
         res.end(img, 'binary');
     });
 
-var server = app.listen(8080, function () {
+var server = app.listen(8090, function () {
 
     var host = server.address().address;
     var port = server.address().port;
