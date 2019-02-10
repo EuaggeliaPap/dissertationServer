@@ -13,8 +13,10 @@ console.log("Post started ... nn");
 var connection = mysql.createConnection({
     host: 'localhost',
     port: '3306',
+    // localhost config
     // user: 'eua',
     // password: 'euaMarios',
+    // vm config
     user: 'root',
     password: 'root',
     database: 'appcooknew',
@@ -350,25 +352,25 @@ app.get("/orektika", function (req, res) {
 });
 
 app.get("/salates", function (req, res) {
-    var img = fs.readFileSync('./photos/salates/salates.png');
+    var img = fs.readFileSync('../photos/salates/salates.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/kuriws", function (req, res) {
-    var img = fs.readFileSync('./photos/kuriws/kuriws.png');
+    var img = fs.readFileSync('../photos/kuriws/kuriws.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/soupes", function (req, res) {
-    var img = fs.readFileSync('./photos/soupes/soupes.png');
+    var img = fs.readFileSync('../photos/soupes/soupes.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/gluka", function (req, res) {
-    var img = fs.readFileSync('./photos/gluka/gluka.png');
+    var img = fs.readFileSync('../photos/gluka/gluka.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
@@ -377,68 +379,68 @@ app.get("/gluka", function (req, res) {
 
 app.get("/orektikaMeKreatika", function (req, res) {
 
-    var img = fs.readFileSync('./photos/orektika/orektika_me_kreatika.png');
+    var img = fs.readFileSync('../photos/orektika/orektika_me_kreatika.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/orektika/MeKreatika/rolakiaKima", function (req, res) {
 
-    var img = fs.readFileSync('./photos/orektika/meKreatika/rolakiaKima.png');
+    var img = fs.readFileSync('../photos/orektika/meKreatika/rolakiaKima.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/orektika/MeKreatika/Kotompoukies", function (req, res) {
-    var img = fs.readFileSync('./photos/orektika/meKreatika/kotompoukiesStoFourno.png');
+    var img = fs.readFileSync('../photos/orektika/meKreatika/kotompoukiesStoFourno.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/orektikaMeLaxanika", function (req, res) {
-    var img = fs.readFileSync('./photos/orektika/orektika_me_laxanika.png');
+    var img = fs.readFileSync('../photos/orektika/orektika_me_laxanika.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/orektika/MeLaxanika/gemistoAvokanto", function (req, res) {
-    var img = fs.readFileSync('./photos/orektika/MeLaxanika/gemistoAvokanto.png');
+    var img = fs.readFileSync('../photos/orektika/MeLaxanika/gemistoAvokanto.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/orektika/MeLaxanika/muffinsMeKolokith", function (req, res) {
-    var img = fs.readFileSync('./photos/orektika/MeLaxanika/muffinsMeKolokith.png');
+    var img = fs.readFileSync('../photos/orektika/MeLaxanika/muffinsMeKolokith.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/orektikaMeThalassina", function (req, res) {
-    var img = fs.readFileSync('./photos/orektika/orektika_me_thalassina.png');
+    var img = fs.readFileSync('../photos/orektika/orektika_me_thalassina.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/orektika/MeThalassina/garidesMePiperies", function (req, res) {
-    var img = fs.readFileSync('./photos/orektika/MeThalassina/garidesMePiperies.png');
+    var img = fs.readFileSync('../photos/orektika/MeThalassina/garidesMePiperies.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/orektika/MeThalassina/kanapedakiaSolomou", function (req, res) {
-    var img = fs.readFileSync('./photos/orektika/MeThalassina/kanapedakiaSolomou.png');
+    var img = fs.readFileSync('../photos/orektika/MeThalassina/kanapedakiaSolomou.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/orektikaPites", function (req, res) {
-    var img = fs.readFileSync('./photos/orektika/orektika_pites.png');
+    var img = fs.readFileSync('../photos/orektika/orektika_pites.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/orektikaDiafora", function (req, res) {
-    var img = fs.readFileSync('./photos/orektika/orektika_diafora.png');
+    var img = fs.readFileSync('../photos/orektika/orektika_diafora.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
@@ -446,130 +448,130 @@ app.get("/orektikaDiafora", function (req, res) {
 //------------------------------------------------------------  salates subs  --------------------------------------------------------------------------------------
 
 app.get("/salatesMeKreatika", function (req, res) {
-    var img = fs.readFileSync('./photos/salates/salates_me_kreatika.png');
+    var img = fs.readFileSync('../photos/salates/salates_me_kreatika.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/salates/MeKreatika/kotosalataMeXrwmZumarika", function (req, res) {
-    var img = fs.readFileSync('./photos/salates/MeKreatika/kotosalataMeXrwmZumarika.png');
+    var img = fs.readFileSync('../photos/salates/MeKreatika/kotosalataMeXrwmZumarika.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/salates/MeKreatika/mexikanikiSalata", function (req, res) {
-    var img = fs.readFileSync('./photos/salates/MeKreatika/mexikanikiSalata.png');
+    var img = fs.readFileSync('../photos/salates/MeKreatika/mexikanikiSalata.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/salatesMeLaxanika", function (req, res) {
-    var img = fs.readFileSync('./photos/salates/salates_me_laxanika.png');
+    var img = fs.readFileSync('../photos/salates/salates_me_laxanika.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/salates/MeLaxanika/glukoxiniSalata", function (req, res) {
-    var img = fs.readFileSync('./photos/salates/MeLaxanika/glukoxiniSalata.png');
+    var img = fs.readFileSync('../photos/salates/MeLaxanika/glukoxiniSalata.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/salates/MeLaxanika/salataGlustridas", function (req, res) {
-    var img = fs.readFileSync('./photos/salates/MeLaxanika/salataGlustridas.png');
+    var img = fs.readFileSync('../photos/salates/MeLaxanika/salataGlustridas.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/salatesMeThalassina", function (req, res) {
-    var img = fs.readFileSync('./photos/salates/salates_me_thalassina.png');
+    var img = fs.readFileSync('../photos/salates/salates_me_thalassina.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/salates/MeThalassina/makaronotonosalata", function (req, res) {
-    var img = fs.readFileSync('./photos/salates/MeThalassina/makaronotonosalata.png');
+    var img = fs.readFileSync('../photos/salates/MeThalassina/makaronotonosalata.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/salates/MeThalassina/poluxrwmiMeTono", function (req, res) {
-    var img = fs.readFileSync('./photos/salates/MeThalassina/poluxrwmiMeTono.png');
+    var img = fs.readFileSync('../photos/salates/MeThalassina/poluxrwmiMeTono.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/salatesMeZumarika", function (req, res) {
-    var img = fs.readFileSync('./photos/salates/salates_me_zumarika.png');
+    var img = fs.readFileSync('../photos/salates/salates_me_zumarika.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/salatesDiafores", function (req, res) {
-    var img = fs.readFileSync('./photos/salates/salates_diafores.png');
+    var img = fs.readFileSync('../photos/salates/salates_diafores.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 //------------------------------------------------------------  kyriws subs  --------------------------------------------------------------------------------------
 app.get("/kuriwsMeKreatika", function (req, res) {
-    var img = fs.readFileSync('./photos/kuriws/kuriws_me_kreatika.png');
+    var img = fs.readFileSync('../photos/kuriws/kuriws_me_kreatika.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/kuriwsMeLaxanika", function (req, res) {
-    var img = fs.readFileSync('./photos/kuriws/kuriws_me_laxanika.png');
+    var img = fs.readFileSync('../photos/kuriws/kuriws_me_laxanika.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/kuriwsMeThalassina", function (req, res) {
-    var img = fs.readFileSync('./photos/kuriws/kuriws_me_thalassina.png');
+    var img = fs.readFileSync('../photos/kuriws/kuriws_me_thalassina.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/kuriwsMeZumarika", function (req, res) {
-    var img = fs.readFileSync('./photos/kuriws/kuriws_me_zumarika.png');
+    var img = fs.readFileSync('../photos/kuriws/kuriws_me_zumarika.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/kuriwsMeOspria", function (req, res) {
-    var img = fs.readFileSync('./photos/kuriws/kuriws_me_ospria.png');
+    var img = fs.readFileSync('../photos/kuriws/kuriws_me_ospria.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 //------------------------------------------------------------  soupes subs  --------------------------------------------------------------------------------------
 app.get("/soupesMeKreatika", function (req, res) {
-    var img = fs.readFileSync('./photos/soupes/soupes_me_kreatika.png');
+    var img = fs.readFileSync('../photos/soupes/soupes_me_kreatika.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/soupesMeLaxanika", function (req, res) {
-    var img = fs.readFileSync('./photos/soupes/soupes_me_laxanika.png');
+    var img = fs.readFileSync('../photos/soupes/soupes_me_laxanika.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/soupesMeThalassina", function (req, res) {
-    var img = fs.readFileSync('./photos/soupes/soupes_me_thalassina.png');
+    var img = fs.readFileSync('../photos/soupes/soupes_me_thalassina.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get("/soupesMeZumarika", function (req, res) {
-    var img = fs.readFileSync('./photos/soupes/soupes_me_zumarika.png');
+    var img = fs.readFileSync('../photos/soupes/soupes_me_zumarika.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
 
 app.get(
     "/soupesMeOspria", function (req, res) {
-        var img = fs.readFileSync('./photos/soupes/soupes_me_ospria.png');
+        var img = fs.readFileSync('../photos/soupes/soupes_me_ospria.png');
         res.writeHead(200, {'Content-Type': 'image/png'});
         res.end(img, 'binary');
     });
