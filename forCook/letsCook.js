@@ -13,8 +13,10 @@ console.log("Post started ... nn");
 var connection = mysql.createConnection({
     host: 'localhost',
     port: '3306',
-    user: 'eua',
-    password: 'euaMarios',
+    // user: 'eua',
+    // password: 'euaMarios',
+    user: 'root',
+    password: 'root',
     database: 'appcooknew',
     multipleStatements: true
 });
