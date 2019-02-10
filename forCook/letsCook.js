@@ -13,10 +13,10 @@ console.log("Post started ... nn");
 var connection = mysql.createConnection({
     host: 'localhost',
     port: '3306',
-    // user: 'eua',
-    // password: 'euaMarios',
-    user: 'root',
-    password: 'root',
+    user: 'eua',
+    password: 'euaMarios',
+    // user: 'root',
+    // password: 'root',
     database: 'appcooknew',
     multipleStatements: true
 });
@@ -344,7 +344,7 @@ app.post("/updateUser", function (req, res) {
 });
 
 app.get("/orektika", function (req, res) {
-    var img = fs.readFileSync('./photos/orektika/orektika.png');
+    var img = fs.readFileSync('../photos/orektika/orektika.png');
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(img, 'binary');
 });
@@ -574,7 +574,7 @@ app.get(
         res.end(img, 'binary');
     });
 
-var server = app.listen(8090, function () {
+var server = app.listen(8080, function () {
 
     var host = server.address().address;
     var port = server.address().port;
